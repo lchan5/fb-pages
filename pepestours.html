@@ -4,83 +4,363 @@
   <style>
     html, body {
       margin:0;
-      padding:30px;
+      padding:0px;
+      width:810px;
+      background:burlywood;
     }
+    
+    .header {
+      xborder:1px solid blue;
+      height:100px;
+      background-image: url("http://2.bp.blogspot.com/-tQokSHVpsPk/VjdWDmLBCnI/AAAAAAAAG2k/vto3spsGS5U/s1600/The%2BQuebrada%2Bde%2BHumahuaca%2Bnorthwest%2BArgentina%2B2.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position: 15% 65%;
+    }
+    
+    h1 {
+      font-size:22px;
+      line-height:1.2em;
+    }
+    
+    h2 {
+      font-size:18px;
+      line-height:1.2em;
+      margin-bottom:30px;
+    }
+    
+    h3 {
+      font-size:18px;
+    }
+    
+    .table-striped th, .table-striped>tbody>tr:nth-child(odd)>td {
+      background-color:#efefef;
+    }
+    
+    .table-striped>tbody>tr:nth-child(even)>td {
+      background-color:#f9f9f9;
+    }
+
+    
+    .cta {
+      width:200px;
+      text-align:center;
+      margin:auto;
+    }
+    
+    .cta a:link, .cta a:visited {
+      color:#fff;
+      text-decoration:none;
+      font-size:18px;
+    }
+    
+    .cta a:link {
+      background:sienna;
+      border:0;
+      border-radius:5px;
+      padding:20px 40px; 
+    }
+    
+    .cta a:hover {
+      background:#efefef;
+      border:1px solid sienna;
+      color:sienna;
+    }
+    
+    .highlights {
+      margin:0 auto;
+      text-align:center;
+      width:82%;
+      xborder:1px solid red;
+    }
+    
     .box {
-      border:1px solid #ccc;
+      xborder:1px solid #ccc;
       padding:20px;
+      width:200px;
+      height:200px;
+      margin-bottom:20px;
       text-align:center;
     }
-    .box h3 {
-      border:1px solid blue;
-      padding:30px;
+    
+    .box.box1, .box.box2, .box.box3, .box.box4, .box.box5, .box.box6 {
+      background-repeat:no-repeat;
+      background-size:cover;
+      opacity: 0.8;
     }
+    
+    .box.box1 {
+      background-image: url('https://s-media-cache-ak0.pinimg.com/originals/c7/89/6a/c7896a3a57af38db3022e9a46a383b5a.jpg');
+    }
+    
+    .box.box2 {
+      background-image: url("http://www.talampaya.com/img/data/experiencias/w47Kw.jpg");
+    }
+    
+    .box.box3 {
+      background-image: url("http://adventure-landscape.com/wp-content/uploads/2015/09/Biking-on-Route-68-Cafayate-to-Salta.jpg");
+    }
+    
+    .box.box4 {
+      background-image: url("https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/5693/SITours/maip-wine-tasting-tour-from-mendoza-including-trapiche-winery-in-mendoza-126495.jpg");
+    }
+    
+    .box.box5 {
+      background-image: url("http://previews.123rf.com/images/jakobradlgruber/jakobradlgruber1112/jakobradlgruber111200085/11695098-Hiking-in-Aconcagua-National-Park-Argentina-South-America--Stock-Photo.jpg");
+    }
+    
+    .box.box6 {
+      background-image: url("https://s-media-cache-ak0.pinimg.com/736x/e7/11/0e/e7110eb14dcf87627513f38fb87307c2.jpg");
+    }
+    
+    .box .outline {
+      border:2px solid #f9f9f9;
+      width:150px;
+      height:150px;
+      margin:auto;
+    }
+    
+    .box .outline h3 {
+      position:relative;
+      top:20%;
+      color:#efefef;
+      font-weight:700;
+      text-shadow: 2px 2px 8px #000;
+    }
+    
+    .main {
+      xborder:1px solid red;
+      margin:0 auto;
+      width:100%;
+    }
+    
+    .main .container {
+      width:92%;
+    }
+    
+    .more {
+      xborder:1px solid blue;
+      xpadding:30px;
+      margin:50px 0;
+    }
+    
+    .more .more1, .more .more2 {
+      height:600px;
+      padding:20px 40px;
+    }
+    
+    .more p, table {
+      font-size:11px;
+    }
+    
+    .more .more1 {
+      background:#efefef;
+    }
+    
+    .more .more2 {
+      background:lavender;
+      text-align:center;
+    }
+    
+    .more .more2 .more2box {
+      background:#f9f9f9;
+      padding:20px;
+    }
+    
+    .more .more2 p span.date, .more .more2 p span.name {
+      font-size:12px;
+      color:navy;
+      font-weight:700;
+    }
+    
+    .more .more2 p span.name {
+      font-size:13px;
+    }
+    
+    .more .more2 p span.info {
+      color:darkred;
+      font-weight:700;
+    }
+    .more .more2 p span.note {
+      color:darkred;
+      font-size:11px;
+    }
+    .more .more2 p span.summary {
+      font-style:italic;
+    }
+    
+    .more .more2 .includes {
+      text-align:left;
+      font-size:11px;
+    }
+    
+    
+    @media (max-width:500px) {
+      html, body, .highlights, .box, .box .outline {
+        width:100%;
+      }
+      .more .more1, .more .more2 {
+        height:100%;
+      }
+    }
+    
   </style>
 </head>
 <body>
   <div class="header">
-     <div class="container">
-       <div class="headerImage">colorful mountains</div>
-     </div>
-  </div>
-  
-  <div class="intro">
-    <div class="container">
-      <h1>These are just a few things you can do in Northern Argentina</h1>
-    </div>
+    <div class="container">&nbsp;</div>
   </div>
   
   <div class="highlights">
+    <h1>What can you do with 16 days in Northwest Argentina?</h1>
+    <br>
     <div class="row">
         <div class="col-md-4">
-          <div class="box"><h3>Trekking with llamas</h3></div>
+          <div class="box box1"><div class="outline"><h3>Trek<br>with Llamas</h3></div></div>
         </div>
         <div class="col-md-4">
-          <div class="box"><h3>Riding 4x4 trucks</h3></div>
+          <div class="box box2"><div class="outline"><h3>Ride<br>4x4 Trucks</h3></div></div>
         </div>
         <div class="col-md-4">
-          <div class="box"><h3>Biking through mountains</h3></div>
+          <div class="box box3"><div class="outline"><h3>Bike through<br>Mountains</h3></div></div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-          <div class="box"><h3>Wine Tasting</h3></div>
+          <div class="box box4"><div class="outline"><h3>Go<br>Wine Tasting</h3></div></div>
         </div>
         <div class="col-md-4">
-          <div class="box"><h3>Dinosaur Hunting</h3></div>
+          <div class="box box5"><div class="outline"><h3>Hike Aconcagua National Park</h3></div></div>
         </div>
         <div class="col-md-4">
-          <div class="box"><h3>Moon Valley</h3></div>
+          <div class="box box6"><div class="outline"><h3>Visit<br>Moon Valley</h3></div></div>
         </div>
     </div>
   </div>
    
   <div class="main">
     <div class="container">
-      <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
-    </div>
-  </div>
-  
-  <div class="more">
+      <center><h2>Spend just over 2 weeks discovering the highlights and traditions of Argentina's colorful northwest. Get up close to your very own llama. Jump in a 4x4 to safari though a national park. Bike through award-winning vineyards and reward yourself with a glass of Argentina's famously delicious wines. There's no shortage of things to do on this 16 day packed journey. Come take on the adventure of a lifetime!<br><br></h2></center>
+      
+      <div class="cta"><a href="http://www.pepestours.com/contact-us.html">Enquire Today</a></div>
+      
+      <div class="more">
     <div clas="container">
       <div class="row">
-        <div class="col-md-6">
-          <form action="" method="post">
-            <input type="name" placeholder="name" />
-            <br><br>
-            <input type="email" placeholder="email" />
-            <br><br>
-            <textarea cols="31" rows="5"></textarea>
-            <br><br>
-            <input type="submit" value="Request Information" />
-          </form> 
+        <div class="more1 col-md-6">
+          <h4>Tour Highlights</h4>
+          <p>Buenos Aires sightseeing...Flight to Jujuy...Tilcara city walking tour...Trekking with llamas...Guided trek in Zanjas...Salta mountain ranges...50km Bike adventure...Rio Colorado...Flight to Mendoza...Bike tour and wine tasting through 3 Mendoza vineyards...National Route 7 drive...Aconcagua National Park...Ischigualasto Provincial Park ("Moon Valley")...4x4 truck excursion through National Park Talampaya...Return flight to Buenos Aires</p>
+          <table class="table table-striped table-condensed">
+            <tbody>
+  <tr>
+  	<th>Day</th>
+  	<th>Itinerary</th>
+  	<th>Hotel</th>
+  </tr>
+  <tr>
+  	<td>1</td>
+  	<td>Buenos Aires</td>
+  	<td>Broadway Hotel</td>
+  </tr>
+  <tr>
+  	<td>2</td>
+  	<td>Tilcara</td>
+  	<td>Posada Los Angeles</td>
+  </tr>
+  <tr>
+  	<td>3</td>
+  	<td>Zanjas</td>
+  	<td>homestay, basic</td>
+  </tr>
+  <tr>
+  	<td>4</td>
+  	<td>Tilcara</td>
+  	<td>Posada Los Angeles</td>
+  </tr>
+  <tr>
+  	<td>5</td>
+  	<td>Salta</td>
+  	<td>Hotel Las Vegas</td>
+  </tr>
+  <tr>
+  	<td>6</td>
+  	<td>Cafayate</td>
+  	<td>Hotel Asturias</td>
+  </tr>
+  <tr>
+  	<td>7</td>
+  	<td>Salta</td>
+  	<td>Hotel Las Vegas</td>
+  </tr>
+  <tr>
+  	<td>8-9</td>
+  	<td>Mendoza</td>
+  	<td>Hotel Raices Aconcagua</td>
+  </tr>
+  <tr>
+  	<td>10</td>
+  	<td>Aconcagua<br>National Park</td>
+  	<td>shared lodging, basic</td>
+  </tr>
+  <tr>
+  	<td>11</td>
+  	<td>Mendoza</td>
+  	<td>Hotel Raices Aconcagua</td>
+  </tr>
+  <tr>
+  	<td>12-14</td>
+  	<td>Valle Fertil</td>
+  	<td>Hosteria Valle Fertil</td>
+  </tr>
+  <tr>
+  	<td>15</td>
+  	<td>Buenos Aires</td>
+  	<td>Broadway Hotel</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td colspan="2">Depart Buenos Aires</td>
+  </tr>
+   </tbody>
+</table>
         </div>
-        <div class="col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <div class="more2 col-md-6">
+          <div class="more2box">
+          <p>
+            <span class="date">September 1-16, 2017</span>
+            <br>
+            <span class="name">NORTHERN ARGENTINA</span>
+            <br>
+            <span class="info">16 days/15 nights for USD $4,770/person</span><br><span class="note">guaranteed departure with 5 minimum</span>
+            <br><br>
+            <span class="summary">Explore the magnificence of Argentina's undiscovered northwest and experience amazing landscapes and outdoor activities.</span>
+          </p>
+          </div>
+          <br>
+          <p>
+            <span class="name">Your Tour Price Includes</span></p>
+          <div class="includes"></div>
+            <ul>
+              <li>Air transportation (Buenos Aires - Jujuy, Salta - Mendoza, San Juan - Buenos Aires) inclusive of airline taxes and fees</li>
+              <li>13 nights' accommodations (3-star), 1 night homestay (basic), 1 night shared lodging (basic)</li>
+              <li>26 meals: 15 breakfasts, 9 box lunches, 2 dinners</li>
+              <li>Public/private bus/van transportation (transfer in/out every location)</li>
+              <li>Activities: 1N/2D trekking with llamas (Tilcara), Full day bike ride (Cafayate Valley), Half day bike ride + half day hike (Cafayate), 1N/2D trekking (National Park Aconcagua - Mendoza), Mountain bike ride through vineyards (Mendoza), Full day driving tour, (Ischigualasto Provincial Park/Moon Valley), Half day trekking (Talampaya Park), Safari 4x4 truck excursion (Talampaya Park)</li>
+              <li>Services of a Pepe's Tours tour leader</li>
+              <li>Local guide (when needed)</li>
+          </ul>
+        </div>
+        
         </div>
       </div>
     </div>
   </div>
+      
+      
+    </div>
+  </div>
+  
+  
 
 </body>
 </html>
